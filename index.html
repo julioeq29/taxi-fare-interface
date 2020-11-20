@@ -23,31 +23,35 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center p-2">NY taxi</h1>
+    <h1 class="text-center p-2">NY taxi 🚌 !!</h1>
   </div>
 
   <div class="position-relative">
     <div class="position-absolute w-100" id="search">
       <div class="container pt-4 d-flex justify-content-center">
         <form class="form-inline">
-          <input type="text" class="form-control mb-2 mr-sm-2" id="pickup" placeholder="Pickup" name="pickup">
-          <input type="hidden" id="pickup_latitude" name="pickup_latitude">
-          <input type="hidden" id="pickup_longitude" name="pickup_longitude">
-          <input type="text" class="form-control mb-2 mr-sm-2" id="dropoff" placeholder="Dropoff" name="dropoff">
-          <input type="hidden" id="dropoff_latitude" name="dropoff_latitude">
-          <input type="hidden" id="dropoff_longitude" name="dropoff_longitude">
-          <input type="text" class="form-control mb-2 mr-sm-2" id="pickup_datetime" name="pickup_datetime">
-          <select id="passenger_count" name="passenger_count" class="custom-select mb-2 mr-sm-2">
-            <option value="1" selected>1 person</option>
-            <option value="2">2 persons</option>
-            <option value="3">3 persons</option>
-            <option value="4">4 persons</option>
-            <option value="5">5 persons</option>
-            <option value="6">6 persons</option>
-            <option value="7">7 persons</option>
-            <option value="8">8 persons</option>
-          </select>
-          <button type="submit" class="btn btn-primary mb-2" id="get-fare-button">Get fare</button>
+          <div class="container d-flex justify-content-end">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="pickup" placeholder="Pickup" name="pickup" style="width: 330px;">
+            <input type="hidden" id="pickup_latitude" name="pickup_latitude">
+            <input type="hidden" id="pickup_longitude" name="pickup_longitude">
+            <input type="text" class="form-control mb-2" id="dropoff" placeholder="Dropoff" name="dropoff" style="width: 330px;">
+            <input type="hidden" id="dropoff_latitude" name="dropoff_latitude">
+            <input type="hidden" id="dropoff_longitude" name="dropoff_longitude">
+          </div>
+          <div class="container d-flex justify-content-end">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="pickup_datetime" name="pickup_datetime">
+            <select id="passenger_count" name="passenger_count" class="custom-select mb-2 mr-sm-2">
+              <option value="1" selected>1 person</option>
+              <option value="2">2 persons</option>
+              <option value="3">3 persons</option>
+              <option value="4">4 persons</option>
+              <option value="5">5 persons</option>
+              <option value="6">6 persons</option>
+              <option value="7">7 persons</option>
+              <option value="8">8 persons</option>
+            </select>
+            <button type="submit" class="btn btn-primary mb-2" id="get-fare-button">Get fare</button>
+          </div>
         </form>
       </div>
     </div>

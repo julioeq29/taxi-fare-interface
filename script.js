@@ -1,13 +1,13 @@
 const algoliaPlacesApiAppId = 'plU4N8HG6QWK';
 const algoliaPlacesApiKey = '1131438afb49f60a48ed468c5af189b8';
-const mapboxApiToken = 'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJjam83MjVrbWkwbWNoM3FwN2VhMm81eGRzIn0.yM3wkq5LJd8NeSYyPyTY4w';
-const taxiFareApiUrl = 'https://YOUR_API_URL.herokuapp.com/predict_fare';
+const mapboxApiToken = 'pk.eyJ1IjoianVsaW9lcTI5IiwiYSI6ImNqcnc2d3R4MjA4czY0OW9hZWhlMzk2Nm8ifQ.6eEUl4ONh8EzfaIgCF_khg';
+const taxiFareApiUrl = 'https://taxifare-api-424-v1.herokuapp.com/predict_fare';
 
 const displayMap = (start, stop) => {
   mapboxgl.accessToken = mapboxApiToken;
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    style: 'mapbox://styles/julioeq29/ckhqdm3wk0y5c19qqb4emgnj6', // stylesheet location
     center: [-74.00597, 40.71427], // starting position [lng, lat]
     zoom: 10 // starting zoom
   });
